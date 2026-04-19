@@ -1,0 +1,95 @@
+/* General styles for the compatibility page */
+.compatibility-container {
+    background-color: #ffffff;
+    color: #1f2937; /* Dark gray text */
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header section */
+  .compatibility-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .compatibility-header span {
+    color: #22c55e; /* Green color */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875rem; /* Small text */
+    letter-spacing: 0.1em;
+  }
+  
+  .compatibility-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    color: #111827; /* Darker gray */
+  }
+  
+  .compatibility-header p {
+    color: #6b7280; /* Light gray */
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Compatibility status box */
+  .compatibility-status {
+    background-color: #d1fae5; /* Light green background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compatibility-status .status-icon {
+    color: #22c55e; /* Green color */
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .compatibility-status h2 {
+    color: #22c55e; /* Green color */
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .compatibility-status p {
+    color: #374151; /* Dark gray */
+    font-size: 1rem;
+  }
+  
+  /* Compatibility details grid */
+  .compatibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .compatibility-card {
+    background-color: #f9fafb; /* Light gray background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .compatibility-card .card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .compatibility-card h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #111827; /* Darker gray */
+  }
+  
+  .compatibility-card p {
+    font-size: 0.875rem;
+    color: #6b7280; /* Light gray */
+  }

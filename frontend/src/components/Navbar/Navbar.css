@@ -1,0 +1,63 @@
+/* Navbar container */
+.navbar {
+  background-color: #4b4e52; /* Dark background */
+  color: white;
+  padding: 1rem;
+  border-bottom: 2px solid #ffffff; /* White border */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar inner container */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #facc15; /* Yellow color */
+  text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #facc15; /* Yellow color on hover */
+}
+
+/* Reset button */
+.navbar-reset {
+  background-color: #facc15; /* Yellow background */
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-reset:hover {
+  background-color: #eab308; /* Darker yellow on hover */
+}

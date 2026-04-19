@@ -1,0 +1,124 @@
+/* General styles for the hero section */
+.hero {
+    background-color: #0d1117; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  
+  /* Hero badge */
+  .hero-badge {
+    font-size: 0.875rem;
+    color: #9ca3af; /* Light gray */
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-badge .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #22c55e; /* Green */
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  /* Hero title */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .hero-title .yellow {
+    color: #facc15; /* Yellow */
+  }
+  
+  /* Hero subtitle */
+  .hero-sub {
+    font-size: 1.125rem;
+    color: #9ca3af; /* Light gray */
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Hero buttons */
+  .hero-btns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #facc15; /* Yellow */
+    color: #000000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #eab308; /* Darker yellow */
+  }
+  
+  .btn-outline {
+    border: 2px solid #facc15; /* Yellow border */
+    color: #facc15;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline:hover {
+    background-color: #facc15;
+    color: #000000;
+  }
+  
+  /* Hero features */
+  .hero-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .feat-card {
+    background-color: #f9fafb; /* Light gray */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feat-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #facc15; /* Yellow */
+  }
+  
+  .feat-card h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #111827; /* Darker gray */
+  }
+  
+  .feat-card p {
+    font-size: 0.875rem;
+    color: #6b7280; /* Light gray */
+  }
+  
+  /* Hero arrow */
+  .hero-arrow {
+    font-size: 2rem;
+    color: #9ca3af; /* Light gray */
+    margin-top: 2rem;
+  }
