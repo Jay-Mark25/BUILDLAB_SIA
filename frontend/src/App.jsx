@@ -1,27 +1,38 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BuildProvider } from "./contexts/BuildContext";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Build from "./components/Build/Build";
 import Compatibility from "./components/Compatibility/Compatibility";
+import Learn from "./components/Learn/Learn";
+import Summary from "./components/Summary/Summary";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-buildlab-dark">
-        <Navbar />
-        <Routes>
-          {/* Main Landing Page */}
-          <Route path="/" element={<Home />} />
+    <BuildProvider>
+      <Router>
+        <div className="min-h-screen bg-buildlab-dark">
+          <Navbar />
+          <Routes>
+            {/* Main Landing Page */}
+            <Route path="/" element={<Home />} />
 
-          {/* Build Page */}
-          <Route path="/build" element={<Build />} />
+            {/* Build Page */}
+            <Route path="/build" element={<Build />} />
 
-          {/* Compatibility Page */}
-          <Route path="/compatibility" element={<Compatibility />} />
-        </Routes>
-      </div>
-    </Router>
+            {/* Compatibility Page */}
+            <Route path="/compatibility" element={<Compatibility />} />
+
+            {/* Learn Page */}
+            <Route path="/learn" element={<Learn />} />
+
+            {/* Summary Page */}
+            <Route path="/summary" element={<Summary />} />
+          </Routes>
+        </div>
+      </Router>
+    </BuildProvider>
   );
 }
 

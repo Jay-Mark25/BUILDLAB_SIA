@@ -19,7 +19,8 @@ function Hero() {
       </p>
 
       <div className="hero-btns">
-        <Link to="/build" className="btn-primary">⚙ Start Building Now</Link> {/* Updated to use Link */}
+        <Link to="/build" className="btn-primary">⚙ Start Building Now</Link>
+        <Link to="/learn" className="btn-secondary">📘 Learn Section</Link>
         <a href="#compatibility" className="btn-outline">ℹ How It Works</a>
       </div>
 

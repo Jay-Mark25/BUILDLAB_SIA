@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useBuild } from '../../contexts/BuildContext';
 import './Navbar.css'; // Import the CSS file
 
 function Navbar() {
+  const { resetBuild } = useBuild();
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -11,7 +14,9 @@ function Navbar() {
           <Link to="/" className="navbar-link">Home</Link>
           <Link to="/build" className="navbar-link">Build</Link>
           <Link to="/compatibility" className="navbar-link">Compatibility</Link>
-          <button className="navbar-reset">Reset Build</button>
+          <Link to="/learn" className="navbar-link">Learn</Link>
+          <Link to="/summary" className="navbar-link">Summary</Link>
+          <button onClick={resetBuild} className="navbar-reset">Reset Build</button>
         </div>
       </div>
     </nav>
